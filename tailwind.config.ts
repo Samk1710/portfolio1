@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
+		backgroundSize: {
+			'300%': '300%',
+		  },
 		keyframes:{
 			"aurora-border": {
           "0%, 100%": { borderRadius: "37% 29% 27% 27% / 28% 25% 41% 37%" },
@@ -16,6 +19,11 @@ export default {
           "50%": { borderRadius: "57% 23% 47% 72% / 63% 17% 66% 33%" },
           "75%": { borderRadius: "28% 49% 29% 100% / 93% 20% 64% 25%" },
         },
+		'animatedgradient': {
+          		'0%': { backgroundPosition: '0% 50%' },
+         		'50%': { backgroundPosition: '100% 50%' },
+         		'100%': { backgroundPosition: '0% 50%' },
+			},
         "aurora-1": {
           "0%, 100%": { top: "0", right: "0" },
           "50%": { top: "50%", right: "25%" },
@@ -88,7 +96,16 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		  animation: {
+			blob: 'blob 7s infinite',
+			float: 'float 6s ease-in-out infinite',
+		  gradient: 'animatedgradient 4s ease infinite alternate',
+		},
+		animationDelay: {
+			'2000': '2s',
+			'4000': '4s'
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

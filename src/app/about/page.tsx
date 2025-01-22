@@ -38,11 +38,11 @@ export default function About() {
 
           <div className="flex flex-col sm:flex-row items-center mb-8">
             <Image
-              src="/placeholder.svg"
+              src="/IMG_2070.JPG"
               alt="Sampurna Pyne"
               width={150}
               height={150}
-              className="rounded-full border-4 border-white shadow-lg mb-4 sm:mb-0 sm:mr-8"
+              className="rounded-full object-fill border-4 border-white shadow-lg mb-4 sm:mb-0 sm:mr-8"
             />
             <div>
               <h1 className="text-3xl font-bold mb-2">Sampurna Pyne</h1>
