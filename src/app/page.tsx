@@ -7,7 +7,7 @@ import { useState } from "react"
 
 import { Particles } from "../../src/components/ui/particles";
 import { MorphingText } from "@/components/ui/morphing-text"
-import { AuroraText } from "@/components/ui/aurora-text";
+import { AuroraText } from "../components/ui/aurora-text";
 export default function Home() {
   const [color, setColor] = useState("#ffffff");
   const texts = [
@@ -34,7 +34,10 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-700 via-pink-500 to-teal-500 text-transparent bg-clip-text animate-gradient bg-300%"
         >
-          Sampurna Pyne
+          <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] animate-gradient-x">
+            Sampurna Pyne
+          </span>
+          
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
