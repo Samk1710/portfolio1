@@ -8,29 +8,29 @@ const projects = [
     name: "SecureNet",
     description: "IDS/IPS benchmarking tool",
     image: "/Cyber-security.jpg",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/indiainternetfoundation/securenet-innovators",
+    demo: "https://drive.google.com/file/d/1rQajGz1wrBylOAl3JR7sHbbW2oV8_VEL/view?usp=drivesdk",
   },
   {
     name: "CredKey",
     description: "Blockchain-based credential verification",
     image: "/WhatsApp Image 2025-01-23 at 03.35.31_3daefd66.jpg",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/Samk1710/CredKey",
+    demo: "https://drive.google.com/file/d/1Aj3cL-yqdnmbO5jBioDfCEXJkM-NVPGM/view?usp=drivesdk",
   },
   {
-    name: "Altnode",
+    name: "AltNode",
     description: "AI plugin DApp",
     image: "/Gemini_Generated_Image_t5p0szt5p0szt5p0.jpeg",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/Samk1710/web3xAI",
+    
   },
   {
     name: "PySec",
     description: "Network security tools",
     image: "/WhatsApp Image 2025-01-23 at 03.40.06_07a9e9b0.jpg",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/Samk1710/cybersecurityptojects",
+    
   },
 ]
 

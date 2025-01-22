@@ -25,7 +25,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-pink-700 via-pink-500 to-teal-500 text-transparent bg-clip-text animate-gradient bg-300% tracking-wider"
+          className="text-4xl sm:text-7xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-pink-700 via-pink-500 to-teal-500 text-transparent bg-clip-text animate-gradient bg-300% tracking-wider"
         >
           
             Sampurna Pyne

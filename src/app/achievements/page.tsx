@@ -41,13 +41,7 @@ const achievements = [
     description: "Specialized in IoT and Cybersecurity including Blockchain Technology ",
     icon: FaGraduationCap,
   },
-  {
-    id:6,
-    year: 2023,
-    title: "Started with B.Tech in Computer Science Engineering",
-    description: "Specialized in IoT and Cybersecurity including Blockchain Technology ",
-    icon: FaGraduationCap,
-  },
+  
 ]
 
 export default function Achievements() {
