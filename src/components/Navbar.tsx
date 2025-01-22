@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-white font-bold text-xl">
-            <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-2xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+            <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-r from-pink-700 via-pink-500 to-teal-500 text-transparent bg-clip-text animate-gradient bg-300% text-center text-2xl font-bold leading-none tracking-tighter dark:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
             Samk1710
             </span>
               
