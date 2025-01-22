@@ -3,19 +3,19 @@
 import { Particles } from "@/components/ui/particles"
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { FaTrophy, FaCertificate, FaGraduationCap } from "react-icons/fa"
+import { FaTrophy, FaCertificate, FaGraduationCap, FaGoogle } from "react-icons/fa"
 
 const achievements = [
   {
-    year: 2027,
-    title: "Graduated with B.Tech in Computer Science Engineering",
-    description: "Completed degree with honors",
-    icon: FaGraduationCap,
+    year: 2025,
+    title: "IETF 122 Representative",
+    description: "Upcoming Representative at global internet standards conference",
+    icon: FaCertificate,
   },
   {
     year: 2025,
-    title: "2nd place at East India Blockchain Summit",
-    description: "Recognized for innovative blockchain solution",
+    title: "3rd place at East India Blockchain Summit",
+    description: "Recognized for innovative blockchain solution for Decentralized Identification",
     icon: FaTrophy,
   },
   {
@@ -24,11 +24,24 @@ const achievements = [
     description: "Developed cutting-edge solution for industry standards",
     icon: FaTrophy,
   },
+  
+  {
+    year: 2024,
+    title: "CyberSecurity Mentor At Google Developers on Campus",
+    description: "Community at Heritage Institute of Technology",
+    icon: FaGoogle,
+  },
   {
     year: 2023,
-    title: "IETF 122 Representative",
-    description: "Represented institution at global internet standards conference",
-    icon: FaCertificate,
+    title: "Started with B.Tech in Computer Science Engineering",
+    description: "Specialized in IoT and Cybersecurity including Blockchain Technology ",
+    icon: FaGraduationCap,
+  },
+  {
+    year: 2023,
+    title: "Started with B.Tech in Computer Science Engineering",
+    description: "Specialized in IoT and Cybersecurity including Blockchain Technology ",
+    icon: FaGraduationCap,
   },
 ]
 
