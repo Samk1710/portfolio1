@@ -13,9 +13,7 @@ export default function Home() {
   const texts = [
     "Security",
     "Web3.0",
-
-
-    
+    "Full-Stack",
   ];
   return (
     <div className="relative min-h-screen flex items-center justify-center">
