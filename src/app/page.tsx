@@ -6,8 +6,17 @@ import Link from "next/link"
 import { useState } from "react"
 
 import { Particles } from "../../src/components/ui/particles";
+import { MorphingText } from "@/components/ui/morphing-text"
+import { AuroraText } from "@/components/ui/aurora-text";
 export default function Home() {
   const [color, setColor] = useState("#ffffff");
+  const texts = [
+    "Security",
+    "Web3.0",
+
+
+    
+  ];
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <Particles
@@ -25,16 +34,16 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
         >
-          Sampurna Pyne
+          <AuroraText>Sampurna Pyne</AuroraText>
         </motion.h1>
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8"
+          className="text-xl sm:text-2xl md:text-xl text-gray-300 mb-8"
         >
-          Cybersecurity and Web3 Professional | Computer Science Major
-        </motion.p>
+          <MorphingText texts={texts}/>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
