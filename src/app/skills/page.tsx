@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { FaPython, FaJava, FaEthereum, FaDatabase, FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa"
 import { SiDjango, SiNextdotjs, SiWireshark, SiGit } from "react-icons/si"
 import { Particles } from "../../components/ui/particles";
-import { useState } from "react";
+
 const skills = [
   { name: "Python", icon: FaPython },
   { name: "Java", icon: FaJava },
@@ -20,14 +20,14 @@ const skills = [
 ]
 
 export default function Skills() {
-  const [color, setColor] = useState("#ffffff");
+ 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
        <Particles
         className="absolute inset-0 z-0"
         quantity={100}
         ease={80}
-        color={color}
+        color="#ffffff"
         refresh
       />
       <motion.div

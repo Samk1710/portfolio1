@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { FaLightbulb, FaPuzzlePiece, FaUsers, FaRocket } from "react-icons/fa"
 import { Particles } from "../../components/ui/particles";
-import { useState } from "react";
+
 
 const traits = [
   { icon: FaLightbulb, title: "Computer Science", description: "Student passionate about Tech" },
@@ -14,7 +14,7 @@ const traits = [
 ]
 
 export default function About() {
-  const [color, setColor] = useState("#ffffff");
+  
   return (
     <div>
     
@@ -23,7 +23,7 @@ export default function About() {
         className="absolute inset-0 z-0"
         quantity={100}
         ease={80}
-        color={color}
+        color="#ffffff"
         refresh
       />
        

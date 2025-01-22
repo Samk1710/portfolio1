@@ -3,13 +3,13 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-import { useState } from "react"
+
 
 import { Particles } from "../../src/components/ui/particles";
 import { MorphingText } from "@/components/ui/morphing-text"
-import { AuroraText } from "../components/ui/aurora-text";
+
 export default function Home() {
-  const [color, setColor] = useState("#ffffff");
+  
   const texts = [
     "Security",
     "Web3.0",
@@ -23,7 +23,7 @@ export default function Home() {
               className="absolute inset-0 z-0"
               quantity={100}
               ease={80}
-              color={color}
+              color="#ffffff"
               refresh
             />
       

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
-import { useState } from "react"
+
 import { Particles } from "@/components/ui/particles"
 const projects = [
   {
@@ -37,14 +37,14 @@ const projects = [
 ]
 
 export default function Projects() {
-  const [color, setColor] = useState("#ffffff");
+  
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <Particles
                     className="absolute inset-0 z-0"
                     quantity={100}
                     ease={80}
-                    color={color}
+                    color="#ffffff"
                     refresh
                   />
       <motion.div
