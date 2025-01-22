@@ -7,10 +7,10 @@ import { Particles } from "../../components/ui/particles";
 import { useState } from "react";
 
 const traits = [
-  { icon: FaLightbulb, title: "Leadership", description: "Guiding teams to success" },
+  { icon: FaLightbulb, title: "Computer Science", description: "Student passionate about Tech" },
   { icon: FaPuzzlePiece, title: "Problem-solving", description: "Tackling complex challenges" },
-  { icon: FaUsers, title: "Teamwork", description: "Collaborating for excellence" },
-  { icon: FaRocket, title: "Innovation", description: "Driving cutting-edge solutions" },
+  { icon: FaUsers, title: "Leadership & Teamwork", description: "Collaborating for excellence" },
+  { icon: FaRocket, title: "Interests", description: "Security and Web3.0" },
 ]
 
 export default function About() {
@@ -48,7 +48,8 @@ export default function About() {
               <h1 className="text-3xl font-bold mb-2">Sampurna Pyne</h1>
               <p className="text-gray-300">
                 Full-stack Web3 Developer and Security enthusiast passionate about creating secure, innovative
-                technology solutions.
+                technology solutions. Currently a Computer Science and Engineering Sttudent.
+
               </p>
             </div>
           </div>

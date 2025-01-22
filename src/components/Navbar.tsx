@@ -24,7 +24,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-white font-bold text-xl">
-              Sampurna Pyne
+            <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-2xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+            Samk1710
+            </span>
+              
             </Link>
           </div>
           <div className="hidden md:block">
