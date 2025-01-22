@@ -107,6 +107,7 @@ export default {
 			'2000': '2s',
 			'4000': '4s'
 		},
+		
   	}
   },
   plugins: [require("tailwindcss-animate")],

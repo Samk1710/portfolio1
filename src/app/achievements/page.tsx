@@ -50,7 +50,7 @@ export default function Achievements() {
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <Particles
-              className="absolute inset-0 z-0"
+              className="fixed inset-0 z-0"
               quantity={100}
               ease={80}
               color="#ffffff"
