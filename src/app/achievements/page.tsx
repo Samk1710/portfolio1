@@ -6,19 +6,21 @@ import { useState } from "react"
 import { FaTrophy, FaCertificate, FaGraduationCap, FaGoogle } from "react-icons/fa"
 
 const achievements = [
-  {
+  { id:1,
     year: 2025,
     title: "IETF 122 Representative",
     description: "Upcoming Representative at global internet standards conference",
     icon: FaCertificate,
   },
   {
+    id:2,
     year: 2025,
     title: "3rd place at East India Blockchain Summit",
     description: "Recognized for innovative blockchain solution for Decentralized Identification",
     icon: FaTrophy,
   },
   {
+    id:3,
     year: 2024,
     title: "IEEE-IC Standards Hackathon Winner",
     description: "Developed cutting-edge solution for industry standards",
@@ -26,18 +28,21 @@ const achievements = [
   },
   
   {
+    id:4,
     year: 2024,
     title: "CyberSecurity Mentor At Google Developers on Campus",
     description: "Community at Heritage Institute of Technology",
     icon: FaGoogle,
   },
   {
+    id:5,
     year: 2023,
     title: "Started with B.Tech in Computer Science Engineering",
     description: "Specialized in IoT and Cybersecurity including Blockchain Technology ",
     icon: FaGraduationCap,
   },
   {
+    id:6,
     year: 2023,
     title: "Started with B.Tech in Computer Science Engineering",
     description: "Specialized in IoT and Cybersecurity including Blockchain Technology ",
@@ -67,17 +72,17 @@ export default function Achievements() {
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-700" />
           {achievements.map((achievement, index) => (
             <motion.div
-              key={achievement.title}
+              key={achievement.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="mb-8 flex justify-between items-center w-full"
             >
               <div className="order-1 w-5/12" />
-              <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+              <div className="z-20 flex items-center order-1 bg-gray-900 shadow-xl w-8 h-8 rounded-full">
                 <h1 className="mx-auto font-semibold text-lg text-white">{achievement.year}</h1>
               </div>
-              <div className="order-1 bg-gray-900 rounded-lg shadow-xl w-5/12 px-6 py-4">
+              <div className="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
                 <h3 className="mb-3 font-bold text-white text-xl">{achievement.title}</h3>
                 <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                   {achievement.description}
