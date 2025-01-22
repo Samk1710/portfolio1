@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FaPython, FaJava, FaEthereum, FaDatabase, FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa"
+import { FaPython, FaJava, FaEthereum, FaDatabase, FaHtml5, FaReact, FaNodeJs } from "react-icons/fa"
 import { SiDjango, SiNextdotjs, SiWireshark, SiGit } from "react-icons/si"
 import { Particles } from "../../components/ui/particles";
 
