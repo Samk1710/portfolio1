@@ -2,13 +2,21 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import ParticleBackground from "../components/ParticleBackground"
 
+import { useState } from "react"
 
+import { Particles } from "../../src/components/ui/particles";
 export default function Home() {
+  const [color, setColor] = useState("#ffffff");
   return (
     <div className="relative min-h-screen flex items-center justify-center">
-      <ParticleBackground />
+      <Particles
+              className="absolute inset-0 z-0"
+              quantity={100}
+              ease={80}
+              color={color}
+              refresh
+            />
       
       <div className="z-10 text-center p-8 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg">
         <motion.h1

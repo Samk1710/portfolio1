@@ -1,6 +1,8 @@
 "use client"
 
+import { Particles } from "@/components/ui/particles"
 import { motion } from "framer-motion"
+import { useState } from "react"
 import { FaTrophy, FaCertificate, FaGraduationCap } from "react-icons/fa"
 
 const achievements = [
@@ -31,8 +33,16 @@ const achievements = [
 ]
 
 export default function Achievements() {
+  const [color, setColor] = useState("#ffffff");
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+      <Particles
+              className="absolute inset-0 z-0"
+              quantity={100}
+              ease={80}
+              color={color}
+              refresh
+            />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

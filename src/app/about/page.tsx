@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { FaLightbulb, FaPuzzlePiece, FaUsers, FaRocket } from "react-icons/fa"
 import { Particles } from "../../components/ui/particles";
+import { useState } from "react";
 
 const traits = [
   { icon: FaLightbulb, title: "Leadership", description: "Guiding teams to success" },
@@ -13,20 +14,27 @@ const traits = [
 ]
 
 export default function About() {
+  const [color, setColor] = useState("#ffffff");
   return (
     <div>
     
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-    
+    <Particles
+        className="absolute inset-0 z-0"
+        quantity={100}
+        ease={80}
+        color={color}
+        refresh
+      />
        
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-3xl mx-auto bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-xl"
+        className="max-w-3xl mx-auto mt-16 bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-xl"
       >
         <div className="p-8">
-        <Particles />
+        
 
           <div className="flex flex-col sm:flex-row items-center mb-8">
             <Image
