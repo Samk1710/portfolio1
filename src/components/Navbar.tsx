@@ -8,7 +8,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Skills", href: "/skills" },
+  { name: "Skills", href: "/about#skills" },
   { name: "Projects", href: "/projects" },
   { name: "Timeline", href: "/achievements" },
   
@@ -46,7 +46,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/sampurna-pyne-640b92277"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white p-1"
@@ -54,7 +54,7 @@ export default function Navbar() {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Samk1710"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white p-1"

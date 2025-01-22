@@ -2,15 +2,10 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-
-
-
 import { Particles } from "../../src/components/ui/particles";
 import { MorphingText } from "@/components/ui/morphing-text"
-
 export default function Home() {
-  
-  const texts = [
+   const texts = [
     "Security",
     "Web3.0",
     "Full-Stack",
@@ -41,7 +36,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl sm:text-2xl md:text-xl text-gray-300 mb-8"
+          className="text-xl sm:text-2xl md:text-lg text-gray-300"
         >
           <MorphingText texts={texts}/>
         </motion.div>
@@ -49,7 +44,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+          className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 "
         >
           <Link
             href="/resume"

@@ -17,7 +17,7 @@ export default function Footer() {
             </a>
             
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sampurna-pyne-640b92277"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition duration-300"
@@ -25,7 +25,7 @@ export default function Footer() {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Samk1710"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition duration-300"

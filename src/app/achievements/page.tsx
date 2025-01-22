@@ -68,7 +68,7 @@ export default function Achievements() {
         className="max-w-3xl mx-auto"
       >
         <h1 className="text-4xl font-bold mb-12 text-center">Achievements & Timeline</h1>
-        <div className="relative">
+        <div className="relative -ml-36">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-700" />
           {achievements.map((achievement, index) => (
             <motion.div

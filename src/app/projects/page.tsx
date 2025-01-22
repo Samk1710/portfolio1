@@ -1,43 +1,40 @@
 "use client"
-
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
-
 import { Particles } from "@/components/ui/particles"
 const projects = [
   {
-    name: "Benchmarking Tool",
-    description: "Security suite for vulnerability scanning",
-    image: "/placeholder.svg",
+    name: "SecureNet",
+    description: "IDS/IPS benchmarking tool",
+    image: "/Cyber-security.jpg",
     github: "https://github.com",
     demo: "https://demo.com",
   },
   {
     name: "CredKey",
     description: "Blockchain-based credential verification",
-    image: "/placeholder.svg",
+    image: "/WhatsApp Image 2025-01-23 at 03.35.31_3daefd66.jpg",
     github: "https://github.com",
     demo: "https://demo.com",
   },
   {
     name: "Altnode",
     description: "AI plugin DApp",
-    image: "/placeholder.svg",
+    image: "/Gemini_Generated_Image_t5p0szt5p0szt5p0.jpeg",
     github: "https://github.com",
     demo: "https://demo.com",
   },
   {
     name: "PySec",
     description: "Network security tools",
-    image: "/placeholder.svg",
+    image: "/WhatsApp Image 2025-01-23 at 03.40.06_07a9e9b0.jpg",
     github: "https://github.com",
     demo: "https://demo.com",
   },
 ]
 
 export default function Projects() {
-  
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <Particles
@@ -51,8 +48,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-7xl mx-auto"
-      >
+        className="max-w-7xl mx-auto" >
         <h1 className="text-4xl font-bold mb-12 text-center">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -61,8 +57,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-lg"
-            >
+              className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-lg"  >
               <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.name}
