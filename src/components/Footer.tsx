@@ -15,9 +15,7 @@ export default function Footer() {
             >
               sampurnapyne1710@gmail.com
             </a>
-            <a href="tel:+919330738132" className="text-gray-300 hover:text-white transition duration-300">
-              (+91) 9330738132
-            </a>
+            
             <a
               href="https://linkedin.com"
               target="_blank"
