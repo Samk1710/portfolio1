@@ -40,7 +40,7 @@ export default function Achievements() {
               className="absolute inset-0 z-0"
               quantity={100}
               ease={80}
-              color={color}
+              color="#ffffff"
               refresh
             />
       <motion.div
