@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
-import { Particles } from "@/components/ui/particles"
+import { Particles } from "../../components/ui/particles"
 const projects = [
   {
     name: "SecureNet",
