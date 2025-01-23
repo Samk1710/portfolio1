@@ -3,13 +3,13 @@
 import { Particles } from "@/components/ui/particles"
 import { motion } from "framer-motion"
 
-import { FaTrophy, FaCertificate, FaGraduationCap, FaGoogle } from "react-icons/fa"
+import { FaTrophy, FaCertificate, FaGraduationCap, FaGoogle,FaRocket, FaMedal } from "react-icons/fa"
 
 const achievements = [
   { id:1,
     year: 2025,
     title: "IETF 122 Representative",
-    description: "Upcoming Representative at global internet standards conference",
+    description: "Upcoming Representative at global internet standards conference in Bangkok",
     icon: FaCertificate,
   },
   {
@@ -17,7 +17,14 @@ const achievements = [
     year: 2025,
     title: "3rd place at East India Blockchain Summit",
     description: "Recognized for innovative blockchain solution for Decentralized Identification",
-    icon: FaTrophy,
+    icon:FaMedal,
+  },
+  {
+    id:6,
+    year: 2025,
+    title: "Security and Networks Intern",
+    description: "Started as an Intern at India Internet Foundation",
+    icon:  FaRocket,
   },
   {
     id:3,
@@ -61,7 +68,7 @@ export default function Achievements() {
         transition={{ duration: 0.5 }}
         className="max-w-3xl mx-auto"
       >
-        <h1 className="text-4xl font-bold mb-12 text-center">Achievements & Timeline</h1>
+        <h1 className="text-4xl font-bold mb-12 text-center">Timeline</h1>
         <div className="relative -ml-36">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-700" />
           {achievements.map((achievement, index) => (
@@ -77,7 +84,7 @@ export default function Achievements() {
                 <h1 className="mx-auto font-semibold text-lg text-white">{achievement.year}</h1>
               </div>
               <div className="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 className="mb-3 font-bold text-white text-xl">{achievement.title}</h3>
+                <h3 className="mb-3 font-bold text-xl ">{achievement.title}</h3>
                 <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                   {achievement.description}
                 </p>

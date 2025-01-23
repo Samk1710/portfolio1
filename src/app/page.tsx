@@ -47,7 +47,7 @@ export default function Home() {
           className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 "
         >
           <Link
-            href="/resume"
+            href="https://sampurnapyneresume.tiiny.site/" target="_blank"
             className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300"
           >
             View Resume
